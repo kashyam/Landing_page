@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page title</title>
+    <meta charset="utf-8">
+    <meta property="og:locale" content="en_US">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
+    <script src="js/main.js"></script>
+    <style>
+        .splide {
+  padding: 20px 0;
+}
+.success-msg{color:#2ad167}
+
+// Generic Slide
+.splide__slide {
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 400ms;
+    transform: scale(.9);
+    transform-origin: center center;
+  }
+}
+
+// Active Slide
+.splide__slide.is-active {
+  img {
+    transform: scale(1);
+  }
+}
+
+// Arrow Tweaks for Accessibility
+.splide .splide__arrow {
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  transform: none;
+  border-radius: unset;
+  width: 50px;
+  opacity: .9;
+  svg {
+    filter: invert(1);
+    width: 24px;
+    height: 24px;
+  }
+}
+.splide__arrow.splide__arrow--prev {
+  left: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+}
+.splide__arrow.splide__arrow--next {
+  right: 0;
+  background: linear-gradient(270deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+}
+#splide-track{padding-left:0 !important;padding-right:0 !important;}
+    </style>
+</head>
+<body class="antialiased bg-body text-body font-body">
+    <div class="">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/charts-demo.js"></script>
+</body>
+</html>
+

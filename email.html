@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cart Up</title>
+    <meta charset="utf-8">
+    <meta property="og:image" content="images/ai-personalized-recommendation.png">
+    <meta property="og:locale" content="en_US">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
+    <script src="js/main.js"></script>
+    <style>
+        .splide {
+  padding: 20px 0;
+}
+.success-msg{color:#2ad167}
+
+// Generic Slide
+.splide__slide {
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 400ms;
+    transform: scale(.9);
+    transform-origin: center center;
+  }
+}
+
+// Active Slide
+.splide__slide.is-active {
+  img {
+    transform: scale(1);
+  }
+}
+
+// Arrow Tweaks for Accessibility
+.splide .splide__arrow {
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  transform: none;
+  border-radius: unset;
+  width: 50px;
+  opacity: .9;
+  svg {
+    filter: invert(1);
+    width: 24px;
+    height: 24px;
+  }
+}
+.splide__arrow.splide__arrow--prev {
+  left: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+}
+.splide__arrow.splide__arrow--next {
+  right: 0;
+  background: linear-gradient(270deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+}
+#splide-track{padding-left:0 !important;padding-right:0 !important;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js "></script>
+    <script type="text/javascript">
+          $(document).ready(function(){
+          $(".open-menu li a").click(function(){
+            $('.mobile-menu').hide();
+            $(this).siblings(".mobile-menu").slideToggle();
+          });
+        });
+    </script>
+</head>
+<body class="antialiased bg-body text-body font-body">
+    <div class="">
+                
+      <section class="bg-white overflow-hidden" style="background-color:#000 ; background-position: center;"><div class="container px-4 mx-auto">
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-container mx-auto px-4">
+              <div>
+                <img class="relative" src="images/Screenshot-2024-01-19-at-8-26-33-PM.png" alt=""></div>
+              <div>
+                <img class="relative" src="images/Screenshot-2024-01-19-at-8-26-44-PM.png" alt=""></div>
+              <div>
+                <img class="relative" src="images/Screenshot-2024-01-19-at-8-26-52-PM.png" alt=""></div>
+              <div>
+                <img class="relative" src="images/Screenshot-2024-01-19-at-8-27-02-PM.png" alt=""></div>
+              <div>
+                <img class="relative" src="images/Screenshot-2024-01-19-at-8-09-50-PM.png" alt=""></div>
+              <div class="flex flex-wrap xl:items-center md:flex-row sm:flex-col-reverse flex-break">
+                <div class="relative md:w-1/2">
+                  <img class="relative" src="images/img-v-png-1705909012700.webp" alt=""></div>
+                <div class="h-full md:w-1/2">
+                  <video autoplay="" loop="" muted="" class=""><source src="https://cartup-analytics.sfo3.digitaloceanspaces.com/videos/pd4.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </source></video></div>
+              </div>
+              <div>
+                <img class="relative" src="images/Screenshot-2024-01-19-at-8-27-26-PM.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/charts-demo.js"></script>
+</body>
+</html>
+
